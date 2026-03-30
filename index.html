@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="game-card">
+  <h1>🏏 Cricket Game</h1>
+  
+  <div class="button-group">
+    <button class="choice-btn" onclick="playGame('Bat')">
+      <span class="icon">🏏</span><br>Bat
+    </button>
+    <button class="choice-btn" onclick="playGame('Ball')">
+      <span class="icon">⚽</span><br>Ball
+    </button>
+    <button class="choice-btn" onclick="playGame('Stump')">
+      <span class="icon">🪵</span><br>Stump
+    </button>
+  </div>
+
+  <div id="result-area" class="result-box" style="display: none;">
+    <p id="moves-desc"></p>
+    <h2 id="outcome-text"></h2>
+  </div>
+
+  <div class="score-card">
+    <p id="score-text">Won: 0 | Lost: 0 | Tie: 0</p>
+    <button class="reset-btn" onclick="resetScore()">Reset Game</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
